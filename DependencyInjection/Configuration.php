@@ -22,8 +22,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('sensio_buzz');
+        $treeBuilder = new TreeBuilder('sensio_buzz');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
